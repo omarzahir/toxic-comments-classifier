@@ -1,0 +1,42 @@
+[project]
+name = "detect-hateful-comments"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "omar zahir", email = "omarzahir202@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.16.0",
+    "datasets>=5.2.0",
+    "fastapi>=0.163.1",
+    "ipykernel>=7.4.0",
+    "joblib>=1.6.0",
+    "kernels>=0.18.3",
+    "matplotlib>=3.11.2",
+    "openai>=3.57.0",
+    "pandas>=3.1.1",
+    "pydantic>=2.14.3",
+    "python-dotenv>=1.2.4",
+    "scikeras>=0.13.0",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "tensorflow>=2.21.0",
+    "torch>=2.15.0",
+    "transformers>=5.23.0",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+detect-hateful-comments = "detect_hateful_comments:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+]

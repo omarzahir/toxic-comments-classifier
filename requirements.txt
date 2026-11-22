@@ -1,0 +1,14 @@
+ipykernel
+datasets
+pandas
+scikit-learn
+seaborn 
+matplotlib
+tensorflow
+scikeras
+joblib
+pydantic
+fastapi
+uvicorn
+openai
+python-dotenv
